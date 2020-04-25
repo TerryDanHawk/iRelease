@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>iCore.Web.MVC</name>
+    </assembly>
+    <members>
+        <member name="M:iCore.Web.MVC.Controllers.ExtenalAPI.AuthorityController.WebAuth(System.String,System.String)">
+             <summary>
+             Web授权接口
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /WebAuth
+                 {
+                    "userkey": "23",         
+                    "token": "EFISUXN1=DUEO389DO--="
+                 }
+            
+             </remarks>
+             <param name="userkey">用户钥匙</param>
+             <param name="token">令牌</param>
+             <returns>SuccessModel</returns>
+        </member>
+        <member name="T:iCore.Web.MVC.Platform.Report.Controllers.ResumeViewModel">
+            <summary>
+            Demo ViewModel
+            </summary>
+        </member>
+        <member name="T:iCore.Web.MVC.Platform.Report.Controllers.DemoController">
+            <summary>
+            Demo Controller
+            </summary>
+        </member>
+        <member name="M:iCore.Web.MVC.Platform.Web.Controllers.HomeController.ExportControllersLetters">
+            <summary>
+            通过Excel模板方式导出Controller's Letter
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+<Module code="Home" name="Home">
+    <Menu code="Home_Dashboard" name="Dashboard" icon="fa fa-dashboard" link="/Web/Home/Dashboard">
+      
+    </Menu>
+
+  <!--<Menu code="Home_BudgetPackage" name="Budget Report" icon="fa fa-money" link="#">
+    <ChildMenu code="Home_BudgetPackage_Overview" name="Overview" icon="fa fa-circle-o" link="/Web/Home/Overview">
+      <Button id="btnExport" name="Export"/>
+      <Button id="btnPrint" name="Print"/>
+    </ChildMenu>
+    <ChildMenu code="Home_BudgetPackage_MatrixReport" name="Matrix Report" icon="fa fa-circle-o" link="/Web/Home/MatrixReport">
+      <Button id="btnExport" name="Export"/>
+      <Button id="btnPrint" name="Print"/>
+    </ChildMenu>
+    
+  </Menu>--> 
+  <Menu code="Home_MonthlyReport" name="Forecast Packages" icon="fa fa-calendar" link="#">
+      <ChildMenu code="Home_ControllerLetter" name="Controller Letter" icon="" link="#">
+        <SubChildMenu code="Home_ControllerLetter_PAndLControllerLetter" name="Figures" icon="fa fa-circle-o" link="/Web/Home/PAndLControllerLetter">
+          <Button id="btnExport" name="Export"/>
+          <Button id="btnPrint" name="Print"/>
+        </SubChildMenu>
+        <SubChildMenu code="Home_ControllerLetter_PAndLP3" name="P3" icon="fa fa-circle-o" link="/Web/Home/PAndLP3">
+          <Button id="btnExport" name="Export"/>
+          <Button id="btnPrint" name="Print"/>
+        </SubChildMenu>
+        <SubChildMenu code="Home_ControllerLetter_Comments" name="Comments" icon="fa fa-circle-o" link="/Web/Home/PAndLComments">
+          <Button id="btnSave" name="Save"/>         
+        </SubChildMenu>              
+      </ChildMenu>
+      <ChildMenu code="Home_ProfitAndLoss" name="Profit &amp; Loss" icon="" link="#">
+        <SubChildMenu code="Home_ControllerLetter_PAndLGrossMargin" name="Gross Margin" icon="fa fa-circle-o" link="/Web/Home/PAndLGrossMargin">
+          <Button id="btnExport" name="Export"/>
+          <Button id="btnPrint" name="Print"/>
+        </SubChildMenu>
+        <SubChildMenu code="Home_ControllerLetter_PAndLGreenBook" name="Green Book" icon="fa fa-circle-o" link="/Web/Home/PAndLGreenBook">
+          <Button id="btnExport" name="Export"/>
+          <Button id="btnPrint" name="Print"/>
+        </SubChildMenu>   
+      </ChildMenu>
+      <ChildMenu code="Home_BalanceSheet" name="Balance Sheet Short" icon="" link="#"></ChildMenu>
+      <ChildMenu code="Home_ManufacturingVariance" name="Manufacturing Variance" icon="" link="/Web/Home/ManufactoringVariance"></ChildMenu>
+  </Menu>
+  <Menu code="Home_CostCenterReport" name="Cost Center Report" icon="fa fa-newspaper-o" link="#">  
+    <ChildMenu code="Home_CostCenterReport_Overview" name="Overview" icon="fa fa-circle-o" link="/Web/Home/TotalCost">
+      <Button id="btnExport" name="Export"/>
+      <Button id="btnPrint" name="Print"/>
+    </ChildMenu>
+    <ChildMenu code="Home_CostCenterReport_GeneralJournal" name="General Journal" icon="fa fa-circle-o" link="/Web/Home/GeneralJournal">      
+    </ChildMenu>
+    <ChildMenu code="Home_CostCenterReport_AnalysisReport" name="Analysis Report" icon="fa fa-circle-o" link="/Web/Home/CostCenterAnalysis">      
+    </ChildMenu>
+ 
+  </Menu>  
+</Module>
+  
+<Module code="Process" name="Process">
+    <Menu code="Process_ToDoList" name="Time Line" icon="fa fa-list" link="/Web/Process/ToDoList">
+      
+    </Menu>
+    <Menu code="Process_SubPlanAuth" name="Sub-Plan Authority" icon="fa fa-user-circle-o" link="/Web/Process/SubPlanAuth">
+      
+    </Menu>
+    <Menu code="Process_BudgetWorks" name="Budget Works" icon="fa fa-stack-overflow" link="#">
+      <ChildMenu code="Process_BudgetWorks_BudgetBOMPrice" icon="fa fa-circle-o" name="BOM Price" link="/Web/Process/BudgetBOMPrice">
+        <Button id="btnQuery" name="Query"/>
+        <Button id="btnApply" name="Apply"/>
+        <Button id="btnImport" name="Import"/>
+        <Button id="btnExport" name="Export"/>
+      </ChildMenu>
+      <ChildMenu code="Process_BudgetWorks_BudgetDeptCCOverView" icon="fa fa-circle-o" name="Overview" link="/Web/Process/BudgetDeptCCOverView">
+        <Button id="btnExport" name="Export"/>
+        <Button id="btnPrint" name="Print"/>
+      </ChildMenu>
+      <ChildMenu code="Process_ForecastWorks_BudgetCCDTargetVar" icon="fa fa-circle-o" name="Var Target" link="/Web/Process/BudgetCCDTargetVar">
+        <Button id="btnExport" name="Export"/>
+        <Button id="btnPrint" name="Print"/>
+      </ChildMenu>
+     <ChildMenu code="Process_ForecastWorks_BudgetCCDTargetFix" icon="fa fa-circle-o" name="Fix Target" link="/Web/Process/BudgetCCDTargetFix">
+       <Button id="btnExport" name="Export"/>
+       <Button id="btnPrint" name="Print"/>
+     </ChildMenu>
+     <ChildMenu code="Process_BudgetWorks_BudgetCCDCompilation" icon="fa fa-circle-o" name="Department Plan" link="/Web/Process/BudgetCCDCompilation">
+        <Button id="btnExport" name="Export"/>
+        <Button id="btnPrint" name="Print"/>
+      </ChildMenu> 
+      <ChildMenu code="Process_BudgetWorks_BudgetCCDSubCompilation" icon="fa fa-circle-o" name="Department Sub Plan" link="/Web/Process/BudgetCCDSubCompilation">
+        <Button id="btnExport" name="Export"/>
+        <Button id="btnPrint" name="Print"/>
+      </ChildMenu>    
+   </Menu>
+   <Menu code="Process_ForecastWorks" name="Forecast Works" icon="fa fa-stack-overflow" link="#">
+       <ChildMenu code="Process_ForecastWorks_FCBOMPrice" icon="fa fa-circle-o" name="BOM Price" link="/Web/Process/FCBOMPrice">
+        <Button id="btnQuery" name="Query"/>
+        <Button id="btnApply" name="Apply"/>
+        <Button id="btnImport" name="Import"/>
+        <Button id="btnExport" name="Export"/>
+      </ChildMenu>
+      <ChildMenu code="Process_ForecastWorks_ForecastDeptCCOverView" icon="fa fa-circle-o" name="Overview" link="/Web/Process/ForecastDeptCCOverView">
+        <Button id="btnExport" name="Export"/>
+        <Button id="btnPrint" name="Print"/>
+      </ChildMenu>
+      <ChildMenu code="Process_ForecastWorks_ForecastCCDTargetVar" icon="fa fa-circle-o" name="Var Target" link="/Web/Process/ForecastCCDTargetVar">
+        <Button id="btnExport" name="Export"/>
+        <Button id="btnPrint" name="Print"/>
+      </ChildMenu>
+     <ChildMenu code="Process_ForecastWorks_ForecastCCDTargetFix" icon="fa fa-circle-o" name="Fix Target" link="/Web/Process/ForecastCCDTargetFix">
+       <Button id="btnExport" name="Export"/>
+       <Button id="btnPrint" name="Print"/>
+     </ChildMenu>
+     <ChildMenu code="Process_ForecastWorks_ForecastCCDCompilation" icon="fa fa-circle-o" name="Department Plan" link="/Web/Process/ForecastCCDCompilation">
+        <Button id="btnExport" name="Export"/>
+        <Button id="btnPrint" name="Print"/>
+      </ChildMenu>      
+      <ChildMenu code="Process_ForecastWorks_ForecastCCDSubCompilation" icon="fa fa-circle-o" name="Department Sub Plan" link="/Web/Process/ForecastCCDSubCompilation">
+        <Button id="btnExport" name="Export"/>
+        <Button id="btnPrint" name="Print"/>
+      </ChildMenu>     
+  </Menu>
+
+</Module>
+  
+<Module code="Report" name="Bridge">
+  <Menu code="Report_Dashboard" name="Overview" icon="fa fa-dashboard" link="/Web/Report/Dashboard"></Menu>
+  <Menu code="Report_BasicReport" name="Basic Bridget Table" icon="fa fa-area-chart" link="#">
+    <!--<ChildMenu code="Report_BasicReport_PandLPackagingItem" icon="fa fa-circle-o"  name="P &amp; L  Packaging Item Table" link="/Web/Report/PandLPackagingItem">
+      <Button id="btnExport" name="Export"/>
+      <Button id="btnPrint" name="Print"/>
+    </ChildMenu>-->
+    <ChildMenu code="Report_BasicReport_PandLBila" icon="fa fa-circle-o" name="P &amp; L  Bila Table" link="/Web/Report/PandLBila">
+      <Button id="btnExport" name="Export"/>
+      <Button id="btnPrint" name="Print"/>
+    </ChildMenu>
+    <ChildMenu code="Report_BasicReport_PandLItem" icon="fa fa-circle-o" name="P &amp; L  Item Table" link="/Web/Report/PandLItem">
+      <Button id="btnExport" name="Export"/>
+      <Button id="btnPrint" name="Print"/>
+    </ChildMenu>
+    <!--<ChildMenu code="Report_BasicReport_PandLMatrixItem" icon="fa fa-circle-o" name="P &amp; L  Matrix Table" link="/Web/Report/PandLMatrixItem">
+      <Button id="btnExport" name="Export"/>
+      <Button id="btnPrint" name="Print"/>
+    </ChildMenu>-->
+    
+  </Menu>
+  <!--<Menu code="Report_EnhancementReport" name="Enhancement Report" icon="fa fa-line-chart" link="#">
+  </Menu>-->
+    
+</Module>
+
+<Module code="DataCenter" name="Data">
+    <Menu code="DataCenter_DataWizard" name="Data Wizard" icon="fa fa-hand-o-right" link="/Web/DataCenter/DataWizard"></Menu>
+    <Menu code="DataCenter_MasterData" name="Master Data" icon="fa fa-th" link="#">
+      
+    <ChildMenu code="DataCenter_MasterData_CCD" icon="fa fa-circle-o" name="CCD" link="/Web/DataCenter/CCD">
+      <Button id="btnQuery" name="Query"/>
+      <Button id="btnApply" name="Apply"/>
+      <Button id="btnImport" name="Import"/>
+      <Button id="btnExport" name="Export"/>
+    </ChildMenu>
+      
+    <ChildMenu code="DataCenter_MasterData_CDP" icon="fa fa-circle-o" name="CDP" link="/Web/DataCenter/CDP">
+        <Button id="btnQuery" name="Query"/>
+        <Button id="btnApply" name="Apply"/>
+        <Button id="btnImport" name="Import"/>
+        <Button id="btnExport" name="Export"/>
+   </ChildMenu>
+ 
+       
+   <ChildMenu code="DataCenter_MasterData_BOM" icon="fa fa-circle-o" name="BOM" link="/Web/DataCenter/BOM">
+        <Button id="btnQuery" name="Query"/>
+        <Button id="btnApply" name="Apply"/>
+        <Button id="btnImport" name="Import"/>
+        <Button id="btnExport" name="Export"/>
+   </ChildMenu>
+
+ 
+
+  <ChildMenu code="DataCenter_MasterData_PerPcs" icon="fa fa-circle-o" name="Per Pcs" link="/Web/DataCenter/PerPcs">
+        <Button id="btnQuery" name="Query"/>
+        <Button id="btnApply" name="Apply"/>
+        <Button id="btnImport" name="Import"/>
+        <Button id="btnExport" name="Export"/>
+  </ChildMenu>
+           
+   <ChildMenu code="DataCenter_MasterData_PAndLSKF" icon="fa fa-circle-o" name="P&amp;L SKF" link="/Web/DataCenter/PAndLSKF">
+        <Button id="btnQuery" name="Query"/>
+        <Button id="btnApply" name="Apply"/>
+        <Button id="btnImport" name="Import"/>
+        <Button id="btnExport" name="Export"/>
+   </ChildMenu>
+
+   <ChildMenu code="DataCenter_MasterData_CCSKF" icon="fa fa-circle-o" name="CC SKF" link="/Web/DataCenter/CCSKF">
+        <Button id="btnQuery" name="Query"/>
+        <Button id="btnApply" name="Apply"/>
+        <Button id="btnImport" name="Import"/>
+        <Button id="btnExport" name="Export"/>
+   </ChildMenu>    
+   
+   <!--<ChildMenu code="DataCenter_MasterData_BilaDirectInput" icon="fa fa-circle-o" name="Bila Direct Input" link="/Web/DataCenter/BilaFigureDirectInput">
+      <Button id="btnQuery" name="Query"/>
+      <Button id="btnApply" name="Apply"/>
+      <Button id="btnImport" name="Import"/>
+      <Button id="btnExport" name="Export"/>
+   </ChildMenu>
+        
+   <ChildMenu code="DataCenter_MasterData_PAndLFigureDirectInput" icon="fa fa-circle-o" name="P&amp;L Direct Input" link="/Web/DataCenter/PAndLFigureDirectInput">
+      <Button id="btnQuery" name="Query"/>
+      <Button id="btnApply" name="Apply"/>
+      <Button id="btnImport" name="Import"/>
+      <Button id="btnExport" name="Export"/>
+    </ChildMenu>
+    <ChildMenu code="DataCenter_MasterData_DashBoardDirectInput" icon="fa fa-circle-o" name="Dashboard Direct Input" link="/Web/DataCenter/DashBoardDirectInput">
+      <Button id="btnQuery" name="Query"/>
+      <Button id="btnApply" name="Apply"/>
+      <Button id="btnImport" name="Import"/>
+      <Button id="btnExport" name="Export"/>
+    </ChildMenu>-->  
+      
+    <ChildMenu code="DataCenter_MasterData_ManualInput" icon="fa fa-circle-o" name="Manual Input" link="/Web/DataCenter/ManualInput">
+      <Button id="btnQuery" name="Query"/>
+      <Button id="btnApply" name="Apply"/>
+      <Button id="btnImport" name="Import"/>
+      <Button id="btnExport" name="Export"/>
+   </ChildMenu>
+        
+    <ChildMenu code="DataCenter_MasterData_StandardCost" icon="fa fa-circle-o" name="Standard Cost" link="/Web/DataCenter/StandardCost">
+      <Button id="btnQuery" name="Query"/>
+      <Button id="btnApply" name="Apply"/>
+      <Button id="btnImport" name="Import"/>
+      <Button id="btnExport" name="Export"/>
+    </ChildMenu>
+
+   <ChildMenu code="DataCenter_MasterData_ExchangeRate" icon="fa fa-circle-o" name="Exchange Rate" link="/Web/DataCenter/ExchangeRate">
+      <Button id="btnAdd" name="Add"/>
+      <Button id="btnEdit" name="Edit"/>
+      <Button id="btnDelete" name="Delete"/>
+    </ChildMenu>
+     
+    
+  </Menu>
+    <Menu code="DataCenter_BasicData" name="Basic Data" icon="fa fa-database" link="#">
+    <ChildMenu code="DataCenter_BasicData_CostElement" icon="fa fa-circle-o" name="Cost Element" link="/Web/DataCenter/CostElement">
+          <Button id="btnQuery" name="Query"/>
+          <Button id="btnApply" name="Apply"/>
+          <Button id="btnImport" name="Import"/>
+          <Button id="btnExport" name="Export"/>          
+        </ChildMenu>
+    <ChildMenu code="DataCenter_BasicData_CostCenter" icon="fa fa-circle-o" name="Cost Center" link="/Web/DataCenter/CostCenter">
+       <Button id="btnQuery" name="Query"/>
+       <Button id="btnApply" name="Apply"/>
+       <Button id="btnImport" name="Import"/>
+       <Button id="btnExport" name="Export"/>
+     </ChildMenu>  
+    <!--<ChildMenu code="DataCenter_BasicData_GroupMapping" icon="fa fa-circle-o" name="Group Mapping" link="/Web/DataCenter/GroupMapping">
+      <Button id="btnQuery" name="Query"/>
+      <Button id="btnApply" name="Apply"/>
+      <Button id="btnImport" name="Import"/>
+      <Button id="btnExport" name="Export"/>
+    </ChildMenu>-->
+     <ChildMenu code="DataCenter_BasicData_CEMapping" icon="fa fa-circle-o" name="CEMapping" link="/Web/DataCenter/CEMapping">
+      <Button id="btnQuery" name="Query"/>
+      <Button id="btnApply" name="Apply"/>
+      <Button id="btnImport" name="Import"/>
+      <Button id="btnExport" name="Export"/>
+    </ChildMenu>
+    <ChildMenu code="DataCenter_BasicData_BilaMapping" icon="fa fa-circle-o" name="Bila Mapping" link="/Web/DataCenter/BilaMapping">
+      <Button id="btnQuery" name="Query"/>
+      <Button id="btnApply" name="Apply"/>
+      <Button id="btnImport" name="Import"/>
+      <Button id="btnExport" name="Export"/>
+    </ChildMenu>
+    <ChildMenu code="DataCenter_BasicData_CDPMapping" icon="fa fa-circle-o" name="CDP Mapping" link="/Web/DataCenter/CDPMapping">
+      <Button id="btnQuery" name="Query"/>
+      <Button id="btnApply" name="Apply"/>
+      <Button id="btnImport" name="Import"/>
+      <Button id="btnExport" name="Export"/>
+    </ChildMenu>
+    <ChildMenu code="DataCenter_BasicData_Segment" icon="fa fa-circle-o" name="Segment" link="/Web/DataCenter/Segment">
+      <Button id="btnQuery" name="Query"/>
+      <Button id="btnApply" name="Apply"/>
+      <Button id="btnImport" name="Import"/>
+      <Button id="btnExport" name="Export"/>
+    </ChildMenu>
+  </Menu>
+</Module>
+
+<Module code="Analysis" name="Analysis">
+    <Menu code="Analysis_BreakEvenPoint" name="Break Even Point" icon="fa fa-list" link="/Web/Analysis/BreakEvenPoint">
+
+    </Menu>
+  
+
+
+  </Module>
+  
+  
+<Module code="Setting" name="Setting">
+
+    <Menu code="Setting_Configs" name="Configs" icon="fa fa-gears" link="/Web/Setting/Config"></Menu>
+    <Menu code="Setting_Authorities" name="Authorities" icon="fa fa-user-o" link="#">
+      <ChildMenu code="Setting_Authorities_User" icon="fa fa-circle-o" name="User" link="/Web/Setting/User">
+        <Button id="btnAdd" name="Add"/>
+        <Button id="btnEdit" name="Edit"/>
+        <Button id="btnDelete" name="Delete"/>
+        <Button id="btnImport" name="Import"/>
+        <Button id="btnExport" name="Export"/>
+        <Button id="btnInit" name="Init"/>
+        <Button id="btnLock" name="Lock"/>
+        <Button id="btnUnlock" name="Unlock"/>
+      </ChildMenu>
+      <ChildMenu code="Setting_Authorities_Role" icon="fa fa-circle-o" name="Role" link="/Web/Setting/Role">
+        <Button id="btnAdd" name="Add"/>
+        <Button id="btnEdit" name="Edit"/>
+        <Button id="btnDelete" name="Delete"/>
+      </ChildMenu>
+      <ChildMenu code="Setting_Authorities_Department" icon="fa fa-circle-o" name="Department" link="/Web/Setting/Department">
+        <Button id="btnAdd" name="Add"/>
+        <Button id="btnEdit" name="Edit"/>
+        <Button id="btnDelete" name="Delete"/>
+      </ChildMenu>
+      <ChildMenu code="Setting_Authorities_Authority" icon="fa fa-circle-o" name="Authority" link="/Web/Setting/Authority">
+        <Button id="btnButtons" name="Buttons"/>
+      </ChildMenu>
+    </Menu>
+  </Module>
+  
+</Root>

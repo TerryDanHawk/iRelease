@@ -1,0 +1,49 @@
+{
+  "name": "smartwizard",
+  "version": "4.3.1",
+  "homepage": "https://github.com/techlab/SmartWizard",
+  "authors": [
+    "Dipu Raj <hello@techlaboratory.net>"
+  ],
+  "description": "The awesome jQuery step wizard plugin with Bootstrap support",
+  "main": [
+    "./dist/css/smart_wizard.min.css",
+    "./dist/js/jquery.smartWizard.min.js"
+  ],
+  "keywords": [
+    "bootstrap",
+    "tabs",
+    "wizard",
+    "step",
+    "ui",
+    "jquery-plugin",
+    "jquery"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.0",
+    "bootstrap": ">= 4.0.0-alpha.6"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "composer.json",
+    "examples",
+    "bower_components",
+    ".git*",
+    ".travis*",
+    "*bower.json",
+    "*jquery.json",
+    "test"
+  ],
+  "_release": "4.3.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v4.3.1",
+    "commit": "cf9feba37a841c30a87c3364dfa4411a18fbcb0f"
+  },
+  "_source": "https://github.com/techlab/SmartWizard.git",
+  "_target": "^4.3.1",
+  "_originalSource": "smartwizard",
+  "_direct": true
+}

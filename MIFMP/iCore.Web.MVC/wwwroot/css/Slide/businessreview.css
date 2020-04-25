@@ -1,0 +1,477 @@
+﻿
+.slide-page h2 {
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.senderinfo {
+    position: absolute;
+    font-family: "微软雅黑";
+    font-size: 0.8rem;
+    color: black;
+    bottom: 5%;
+    left: 35%;
+    text-align: left;
+}
+
+.context {
+    position: absolute;
+    font-family: "微软雅黑";
+    font-size: 2.4rem;
+    color: black;
+    top: 7%;
+    left: 5%;
+    text-align: left;
+}
+
+.content {
+    position: absolute;
+    top: 20%;
+    bottom: 18%;
+    left: 5%;
+    right: 5%;
+}
+
+
+.pagetitle {
+    position: absolute;
+    font-family: "微软雅黑";
+    font-size: 2.4rem;
+    color: orange;
+    top: 3%;
+    left: 5%;
+    text-align: left;
+}
+
+.subpagetitle {
+    position: absolute;
+    font-family: "微软雅黑";
+    font-size: 1.8rem;
+    color: black;
+    top: 11%;
+    left: 5%;
+    text-align: left;
+}
+
+.contenttitle {
+    font-family: "微软雅黑";
+    font-size: 1.8rem;
+    color: black;
+    text-align: left;
+    min-height: 100px;
+}
+
+.authorinfo {
+    position: absolute;
+    font-family: "微软雅黑";
+    font-size: 0.8rem;
+    color: black;
+    bottom: 5%;
+    right: 6%;
+    text-align: left;
+}
+
+.pagestart {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_pagestart.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+    .pagestart .title {
+        position: absolute;
+        font-family: "微软雅黑";
+        font-size: 2.4rem;
+        color: orange;
+        bottom: 30%;
+        left: 3%;
+        text-align: left;
+    }
+
+    .pagestart .subtitle {
+        position: absolute;
+        font-family: "微软雅黑";
+        font-size: 2.4rem;
+        color: black;
+        bottom: 22%;
+        left: 3%;
+        text-align: left;
+    }
+
+    .pagestart .belongs {
+        position: absolute;
+        font-family: "微软雅黑";
+        font-size: 0.8rem;
+        color: black;
+        bottom: 8%;
+        left: 3%;
+        text-align: left;
+    }
+
+
+
+.pageagenda {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    /*分割线*/
+    .pageagenda .orangebox{
+        background-color:darkorange;
+        color:white;
+        text-align:center;
+        font-size:1.8em;
+        width:8%;
+    }
+    .pageagenda .spacebox {
+      
+        width: 8%;
+    }
+    .pageagenda .graybox {
+        background-color: whitesmoke;
+        color:black;       
+        font-size:1.2em;
+        padding-left:10px;
+        padding-bottom:2px;
+        padding-top:2px;
+        width:91%;
+        margin-left:1%
+
+    }
+    .pageagenda .graybox-title {
+        font-size: 1.8em !important;
+    }
+
+    .pageagenda .graybox-selected {
+        background-color: dimgray !important;
+        color: white !important;
+    }
+
+    .arrow_box {
+        animation: glow 2000ms ease-out infinite alternate;
+    }
+
+    @keyframes glow {
+        0% {
+            border-color: dimgray;
+            box-shadow: 0 0 5px rgba(105, 105, 105,.4), inset 0 0 5px rgba(105, 105, 105,.1), 0 1px 0 dimgray;
+        }
+
+        100% {
+            border-color: dimgray;
+            box-shadow: 0 0 20px rgba(105, 105, 105,.8), inset 0 0 10px rgba(105, 105, 105,.4), 0 1px 0 dimgray;
+        }
+    }
+
+    .pageagenda .box-margin-row {
+        margin-bottom:5px;
+    }
+    .pageagenda .graybox-smallfont {
+        font-size: 0.8em!important;
+    }
+
+
+    /*分割线*/
+    .pageagenda ol {
+        counter-reset: li; /* 创建一个计数器 */
+        list-style: none; /* 清除列表默认的编码*/
+        *list-style: decimal; /* 让IE6/7具有默认的编码 */
+        font: 22px 'trebuchet MS', 'lucida sans';
+        padding: 0;
+        margin-bottom: 4em;
+        text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    }
+
+        .pageagenda ol ol {
+            margin: 0 0 0 2em; /* 给二级列表增加一定的左边距*/
+        }
+    /*rounded shaped numbers*/
+    .pageagenda .rounded-list a {
+        position: relative;
+        display: block;
+        padding: 0.4em 0.4em 0.4em 2em;
+        *padding: 0.4em; /*for ie6/7*/
+        margin: 0.5em 0;
+        background: #ddd;
+        color: #444;
+        text-decoration: none;
+        /*CSS3属性*/
+        border-radius: 0.3em; /*制作圆角*/
+        /* transition动画效果*/
+        -moz-transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+    }
+
+    .pageagenda .rounded-list .active {
+        background: orange !important;
+        color: white;
+    }
+    /*.pageagenda .rounded-list a:hover {
+            background: #eee;
+        }*/
+    /*
+            .pagecontext .rounded-list a:hover::before {
+               
+                -moz-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+            
+         悬停时旋转编码*/
+    .pageagenda .rounded-list a::before {
+        content: counter(li);
+        counter-increment: li;
+        position: absolute;
+        left: -1.3em;
+        top: 50%;
+        margin-top: -1.3em;
+        background: darkorange; /*#87ceeb;*/
+        height: 2em;
+        width: 2em;
+        line-height: 1.5em;
+        color: white;
+        border: 0.3em solid #fff;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 2em;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+    }
+
+
+
+.page1 {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+    .page1 .page1-smallfont {
+        font-size:0.6em;
+    }
+    .page1 table {
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+    }
+
+        .page1 table tr {
+            width: 100%;
+            height: 10px;
+        }
+
+            .page1 table tr th {
+                border: 1px solid black;
+                font-size:12px;
+            }
+
+            .page1 table tr td {
+                border-right: 1px solid black;
+                border-bottom: 1px solid black;
+                font-weight: normal;
+                font-size: 10px;
+                text-align: left;            
+            }
+
+
+.page2 {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.page2 .page1-smallfont {
+    font-size: 0.6em;
+}
+
+.page2 table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+    .page2 table tr {
+        width: 100%;
+        height: 10px;
+    }
+
+        .page2 table tr th {
+            border: 1px solid black;
+            font-size: 12px;
+        }
+
+        .page2 table tr td {
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            font-weight: normal;
+            font-size: 10px;
+            text-align: left;
+        }
+
+
+
+.page3 {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ 
+
+.page4 {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+   
+
+.page5 {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.page6 {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page7 {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.page9 {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page10 {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page11 {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page13 {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page14 {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page15 {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page16 {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page17 {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page18 {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.page19 {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.pageend {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_pageend.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+    .pageend .title-CN {
+        position: absolute;
+        font-family: "微软雅黑";
+        font-size: 2.6rem;
+        color: black;
+        bottom: 36%;
+        left: 5%;
+        text-align: left;
+    }
+
+    .pageend .title-EN {
+        position: absolute;
+        font-family: "微软雅黑";
+        font-size: 2.6rem;
+        color: orange;
+        bottom: 48%;
+        left: 5%;
+        text-align: left;
+    }
+
+    .pageend .copyinfor {
+        position: absolute;
+        font-family: "微软雅黑";
+        font-size: 0.8rem;
+        color: black;
+        bottom: 5%;
+        right: 3%;
+        text-align: left;
+    }

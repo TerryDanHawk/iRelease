@@ -1,0 +1,590 @@
+﻿.slide-page h2 {
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.senderinfo {
+    position: absolute;
+    font-family: "微软雅黑";
+    font-size: 0.8rem;
+    color: black;
+    bottom: 5%;
+    left: 35%;
+    text-align: left;
+}
+
+.context {
+    position: absolute;
+    font-family: "微软雅黑";
+    font-size: 2.4rem;
+    color: black;
+    top: 7%;
+    left: 5%;
+    text-align: left;
+}
+
+.content {
+    position: absolute;
+    top:20%;
+    bottom:18%;
+    left:5%;
+    right:5%;    
+    
+    
+}
+
+
+.pagetitle {
+    position: absolute;
+    font-family: "微软雅黑";
+    font-size: 2.4rem;
+    color: orange;
+    top: 3%;
+    left: 5%;
+    text-align: left;
+}
+
+.subpagetitle {
+    position: absolute;
+    font-family: "微软雅黑";
+    font-size: 1.8rem;
+    color: black;
+    top: 11%;
+    left: 5%;
+    text-align: left;
+}
+
+.contenttitle {
+    font-family: "微软雅黑";
+    font-size: 1.8rem;
+    color: black;
+    text-align: left;
+    min-height: 100px;
+}
+
+.authorinfo {
+    position: absolute;
+    font-family: "微软雅黑";
+    font-size: 0.8rem;
+    color: black;
+    bottom: 5%;
+    right: 6%;
+    text-align: left;
+}
+
+.pagestart {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_pagestart.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+    .pagestart .title{
+        position: absolute;
+        font-family: "微软雅黑";
+        font-size: 2.4rem;
+        color: orange;
+        bottom: 30%;
+        left: 3%;
+        text-align: left;
+    }
+    .pagestart .subtitle {
+        position: absolute;
+        font-family: "微软雅黑";
+        font-size: 2.4rem;
+        color: black;
+        bottom: 22%;
+        left: 3%;
+        text-align: left;
+    }
+    .pagestart .belongs {
+        position: absolute;
+        font-family: "微软雅黑";
+        font-size: 0.8rem;
+        color: black;
+        bottom: 8%;
+        left: 3%;
+        text-align: left;
+    }
+
+
+
+.pageagenda {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+   
+    .pageagenda ol {
+        counter-reset: li; /* 创建一个计数器 */
+        list-style: none; /* 清除列表默认的编码*/
+        *list-style: decimal; /* 让IE6/7具有默认的编码 */
+        font: 22px 'trebuchet MS', 'lucida sans';
+        padding: 0;
+        margin-bottom: 4em;
+        text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    }
+
+        .pageagenda ol ol {
+            margin: 0 0 0 2em; /* 给二级列表增加一定的左边距*/
+        }
+    /*rounded shaped numbers*/
+    .pageagenda .rounded-list a {
+        position: relative;
+        display: block;
+        padding: 0.4em 0.4em 0.4em 2em;
+        *padding: 0.4em; /*for ie6/7*/
+        margin: 0.5em 0;
+        background: #ddd;
+        color: #444;
+        text-decoration: none;
+        /*CSS3属性*/
+        border-radius: 0.3em; /*制作圆角*/
+        /* transition动画效果*/
+        -moz-transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+    }
+        .pageagenda .rounded-list .active
+        {
+            background:orange!important;
+            color:white;
+        }
+        /*.pageagenda .rounded-list a:hover {
+            background: #eee;
+        }*/
+        /*
+            .pagecontext .rounded-list a:hover::before {
+               
+                -moz-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+            
+         悬停时旋转编码*/
+        .pageagenda .rounded-list a::before {
+            content: counter(li);
+            counter-increment: li;
+            position: absolute;
+            left: -1.3em;
+            top: 50%;
+            margin-top: -1.3em;
+            background: darkorange; /*#87ceeb;*/
+            height: 2em;
+            width: 2em;
+            line-height: 1.5em;
+            color: white;
+            border: 0.3em solid #fff;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 2em;
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -ms-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+
+
+
+.page1 {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+    .page1 ul li {
+        margin-top: 20px;
+    }
+    
+
+
+.page2 {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+    .page2 .selector {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 140px;
+        height: 140px;
+        margin-top: -70px;
+        margin-left: -70px;
+    }
+
+    .page2 .selector, .selector button {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+    }
+
+        .page2 .selector button {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            background: #428bca;
+            border-radius: 50%;
+            border: 0;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+            transition: all .1s;
+        }
+
+            .page2 .selector button:hover {
+                background: #3071a9;
+            }
+
+            .page2 .selector button:focus {
+                outline: none;
+            }
+
+        .page2 .selector ul {
+            position: absolute;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            top: -20px;
+            right: -20px;
+            bottom: -20px;
+            left: -20px;
+        }
+
+        .page2 .selector li {
+            position: absolute;
+            width: 0;
+            height: 100%;
+            margin: 0 50%;
+            -webkit-transform: rotate(-360deg);
+            transition: all 0.8s ease-in-out;
+        }
+
+            .page2 .selector li input {
+                display: none;
+            }
+
+                .page2 .selector li input + label {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 100%;
+                    width: 0;
+                    height: 0;
+                    line-height: 1px;
+                    margin-left: 0;
+                    background: orange;
+                    border-radius: 50%;
+                    text-align: center;
+                    font-size: 1px;
+                    overflow: hidden;
+                    cursor: pointer;
+                    box-shadow: none;
+                    transition: all 0.8s ease-in-out, color 0.1s, background 0.1s;
+                }
+
+                    .page2 .selector li input + label:hover {
+                        background: #f0f0f0;
+                    }
+
+                .page2 .selector li input:checked + label {
+                    background: #5cb85c;
+                    color: white;
+                }
+
+                    .page2 .selector li input:checked + label:hover {
+                        background: #449d44;
+                    }
+
+        .page2 .selector.open li input + label {
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            margin-left: -40px;
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+        }
+
+        /*Lef Description*/
+    .page2 .leftUpContent {
+        position: absolute;
+        left: 0%;
+        top: 5%;
+        width: 40%;
+        height: 200px;
+    }
+    .page2 .leftDescriptionItem {
+        height: 30px;
+    }
+    .page2 .leftunderline {
+        width: 80%;
+        height: 30px;
+        border-top: 1px solid #000000;
+    }
+    .page2 .leftslantline {
+        position: absolute;
+        left: 74.8%;
+        width: 100px;
+        height: 40px;
+        border-top: 1px solid #000000;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+    }
+    .page2 .leftDownContent {
+        position: absolute;
+        left: 0%;
+        bottom: 5%;
+        width: 40%;
+        height: 200px;
+    }
+    .page2 .rightUpContent {
+        position: absolute;
+        right: 0%;
+        top: 5%;
+        width: 32%;
+        height: 200px;
+    }
+    .page2 .rightDescriptionItem {
+        height: 30px;
+        text-align: right;
+        margin-right: 20px;
+    }
+    .page2 .rightunderline {
+        width: 100%;
+        height: 30px;
+        border-top: 1px solid #000000;
+    }
+    .page2 .rightslantline {
+        position: absolute;
+        left: -22.8%;
+        top: 32px;
+        width: 100px;
+        height: 40px;
+        border-top: 1px solid #000000;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+    }
+    .page2 .rightDownContent {
+        position: absolute;
+        right: 0%;
+        bottom: 5%;
+        width: 32%;
+        height: 200px;
+    }
+
+
+
+    .page3 {
+        background-color: #ffffff;
+        background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+        .page3 ul {
+            list-style: none;
+        }
+
+        .page3 ul, .page3 li {
+            margin: 0;
+            padding: 0;
+        }
+
+        .page3 .chart {
+            min-height: 400px;
+            border-bottom: 1px solid #eeeeee;
+            padding: 1em;
+        }
+
+        .page3 .chart--headline, .page3 .chart--subHeadline {
+            text-align: center;
+        }
+
+        .page3 .chart--headline {
+            position: relative;
+            font-weight: 100;
+            font-size: 28px;
+        }
+
+            .page3 .chart--headline:before {
+                position: absolute;
+                content: '';
+                bottom: 133%;
+                left: 50%;
+                width: 25%;
+                margin: 0 0 0 -12.5%;
+                border-top: 1px dashed #999999;
+            }
+
+        .page3 .chart--subHeadline {
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .page3 .charts--container {
+            background-color: white;
+            width: 100%;
+        }
+
+
+
+        .page3 .charts--headline {
+            max-width: 700px;
+            width: 100%;
+            text-align: center;
+            color: #444;
+            background-color: #fff;
+            padding: 1em;
+            margin: auto;
+        }
+
+            .page3 .charts--headline span {
+                text-align: center;
+                text-decoration: underline;
+                color: red;
+                padding: none;
+            }
+
+        .page3 .pieChart--center--innerCircle {
+            fill: #fff;
+        }
+
+        .page3 .pieChart--center--text {
+            font-size: 28px;
+        }
+
+        .page3 .pieChart--center--outerCircle {
+            fill: rgba(255, 255, 255, 0.75);
+        }
+
+        .page3 .pieChart--detail--divider {
+            stroke: gray;
+            stroke-width: 1;
+        }
+
+        .page3 .pieChart--detail--percentage {
+            font-size: 42px;
+            font-weight: 100;
+            fill: #333333;
+            stroke-width: 1px;
+        }
+
+        .page3 .pieChart--detail--textContainer {
+            background-color: transparent;
+            padding: 10px 0 0 0;
+            margin: 0;
+            color: #666666;
+            font-style: italic;
+        }
+
+        .page3 .pieChart--detail__left {
+            text-align: left;
+        }
+
+        .page3 .pieChart--detail__right {
+            text-align: right;
+        }
+
+        .page3 .pieChart__black {
+            fill: black;
+        }
+
+        .page3 .pieChart__darkgray {
+            fill: darkgray;
+        }
+
+        .page3 .pieChart__darkorange {
+            fill: darkorange;
+        }
+
+        .page3 .pieChart__orange {
+            fill: orange;
+        }
+
+        /**
+         * Helper classes
+         */
+        .page3 .hidden {
+            display: none;
+        }
+
+.page4 {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    .page4 .innercontent {
+        padding-left:50px;
+        padding-right:50px;
+        padding-top:50px;
+    }
+        .page4 .innercontent img {
+            margin-left: 32%;
+            background-color:darkorange;
+        }
+     
+
+.page5 {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+   
+
+.page6 {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+   
+
+
+.pageend {
+    background-color: #ffffff;
+    background-image: url('../../../../images/Slide/BasicTemplate/chbsc-light/bg_pageend.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+    .pageend .title-CN {
+        position: absolute;
+        font-family: "微软雅黑";
+        font-size: 2.6rem;
+        color: black;
+        bottom: 36%;
+        left: 5%;        
+        text-align: left;
+    }
+
+    .pageend .title-EN {
+        position: absolute;
+        font-family: "微软雅黑";
+        font-size: 2.6rem;
+        color: orange;
+        bottom: 48%;
+        left: 5%;
+        text-align: left;
+    }
+    .pageend .copyinfor {
+        position: absolute;
+        font-family: "微软雅黑";
+        font-size: 0.8rem;
+        color: black;
+        bottom: 5%;
+        right: 3%;
+        text-align: left;
+    }

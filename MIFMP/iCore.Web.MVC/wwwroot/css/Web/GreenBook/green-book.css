@@ -1,0 +1,65 @@
+﻿
+.bookshelf {
+    padding:10px;
+    min-height:769px;
+    margin-top:2%;
+}
+    .bookshelf .shelf {
+        background: url(../../../images/Web/GreenBook/wall-bookshelf.png);
+        background-size: 100% 20%;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        width: 100%;
+        height: 300px;
+    }
+        .bookshelf .shelf .bookposition {
+            padding-left: 8%; 
+            padding-right:5%;
+            padding-bottom:40px;
+        }
+            .bookshelf .shelf .bookposition .greenbook {
+                width: 200px;
+                height: 250px;
+                background-color: darkgreen;
+                color: whitesmoke;
+                box-shadow: 2px 2px 5px #000;
+                font-size: 1.5em;
+                text-align: center;
+                padding-top: 10px;
+                transition: all 0.6s;
+            }
+                .bookshelf .shelf .bookposition .greenbook:hover {
+                    z-index: 2;
+                    cursor:pointer;                    
+                    -webkit-transform: scale3d(1.1, 1.1, 1) translate3d(0, -5px, 0);
+                    -moz-transform: scale3d(1.1, 1.1, 1) translate3d(0, -5px, 0);
+                    -ms-transform: scale3d(1.1, 1.1, 1) translate3d(0, -5px, 0);
+                    -o-transform: scale3d(1.1, 1.1, 1) translate3d(0, -5px, 0);
+                    transform: scale3d(1.1, 1.1, 1) translate3d(0, -5px, 0);
+                }
+            .bookshelf .shelf .bookposition .greenbook .description {
+                font-family: Arial;
+                font-size: 0.6em;
+                text-align: center;
+                color:lightgray;
+                margin-top:10px;
+               
+            }
+                .bookshelf .shelf .bookposition .greenbook hr {
+                    background-color:white;
+                    height:1px;
+                }
+
+   
+
+        .bookshelf .shelf .row-1:after,
+        .bookshelf .shelf .row-2:after {
+            background: url(../../../images/Web/GreenBook/wall-bookshelf.png);
+          
+           
+            display: block;
+            content: "";
+            
+        }
+
+

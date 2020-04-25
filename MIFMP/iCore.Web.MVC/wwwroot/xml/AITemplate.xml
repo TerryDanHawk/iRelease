@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+  <Area code="AI_CCDCompilationSuggestion_OK">
+    <!--
+      {0}CostCenter
+      {1}CostElement
+      {2}PredicatedValue
+      {3}NowSales
+    -->
+    <Template><![CDATA[My predicate for {0} & {1} is <span style='color:red'>{2:N2}</span>, it is the best values if you can reach it. my predicate is based on the history data and under the condition of now forecast slaes:<span style='color:red'>{3:N2}</span>  ]]></Template>
+    <Template><![CDATA[Emmm...<span style='color:red'>{2:N2}</span> may be the suitable value for this {0} & {1}. ]]></Template>
+    <Template><![CDATA[I have made a simple linear regresion with sales and the value of {0} & {1},now that the predicated sales is <span style='color:red'>{3:N2}</span>, and <span style='color:red'>{2:N2}</span> is my predicated value ]]></Template>
+    <Template><![CDATA[Ah...<span style='color:red'>{2:N2}</span> may be better, but can you reach it? ]]></Template>
+  </Area>
+  <Area code="AI_CCDCompilationSuggestion_NOK">
+    <!--
+      {0}CostCenter
+      {1}CostElement      
+    -->
+    <Template><![CDATA[Just keep it, I have no idea about this {0} & {1} ]]></Template>
+    <Template><![CDATA[Without enough history data of {0} & {1}, I can not give you any suitable suggestion. ]]></Template>
+    <Template><![CDATA[Let's go ahead, just keep it! ]]></Template>
+    <Template><![CDATA[I dont know too much about this {0} & {1} ]]></Template>
+  </Area>
+</Root>
